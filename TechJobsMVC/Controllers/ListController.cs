@@ -48,6 +48,7 @@ namespace TechJobsMVC.Controllers
             {
                 jobs = JobData.FindAll();
                 ViewBag.title = "All Jobs";
+              
             }
             else
             {
@@ -55,6 +56,7 @@ namespace TechJobsMVC.Controllers
                 ViewBag.title = "Jobs with " + ColumnChoices[column] + ": " + value;
             }
             ViewBag.jobs = jobs;
+            
 
             return View();
         }
